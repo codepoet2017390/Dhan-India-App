@@ -36,7 +36,7 @@ Any person in the group gets to take the loan once and app automatically make em
 At present we deal within a single community. So we plan at interconnecting two communities which can be like miles apart. If resolved upon issues like
 - trust issues
 - money tranfer
-- currency value dips and hikes
+- currency value dips and hikes.
 
 **this app could really grow further**
 
