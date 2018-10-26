@@ -60,8 +60,8 @@ public class MainChatActivity extends AppCompatActivity {
     // TODO: Retrieve the display name from the Shared Preferences
     private void setUpDisplayName()
     {
-        SharedPreferences prefs =getSharedPreferences(RegisterActivity.CHAT_PREFS,MODE_PRIVATE);
-        mDisplayName=prefs.getString(RegisterActivity.DISPLAY_NAME_KEY,null);
+        //SharedPreferences prefs =getSharedPreferences(RegisterActivity.CHAT_PREFS,MODE_PRIVATE);
+        //mDisplayName=prefs.getString(RegisterActivity.DISPLAY_NAME_KEY,null);
         if(mDisplayName==null)
             mDisplayName="Anonymous";
     }
