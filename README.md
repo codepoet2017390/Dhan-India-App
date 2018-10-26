@@ -40,11 +40,13 @@ At present we deal within a single community. So we plan at interconnecting two 
 
 **this app could really grow further**
 
-<a href='https://drive.google.com/file/d/1mXsFry_cL0ZmOjHbGGwOezoYYfLORMlm/view' target='_blank' align="right"><img align="right" height='36' src='https://drive.google.com/file/d/1mXsFry_cL0ZmOjHbGGwOezoYYfLORMlm/view' /></a>
+<a href='https://drive.google.com/file/d/1mXsFry_cL0ZmOjHbGGwOezoYYfLORMlm/view' target='_blank' align="right"><img align="left" height='36' src='https://drive.google.com/file/d/1mXsFry_cL0ZmOjHbGGwOezoYYfLORMlm/view' /></a>
+
+<a href='https://drive.google.com/file/d/1mXsFry_cL0ZmOjHbGGwOezoYYfLORMlm/view' target='_blank' align="right"><img align="left" height='36' src='https://drive.google.com/file/d/1mXsFry_cL0ZmOjHbGGwOezoYYfLORMlm/view' /></a>
 
 ![alt text](https://drive.google.com/file/d/1mXsFry_cL0ZmOjHbGGwOezoYYfLORMlm/view)
 
-https://drive.google.com/file/d/1mXsFry_cL0ZmOjHbGGwOezoYYfLORMlm/view
+<a href='https://drive.google.com/file/d/1mXsFry_cL0ZmOjHbGGwOezoYYfLORMlm/view' target='_blank' align="left"><img align="left" height='36' src='https://drive.google.com/file/d/1mXsFry_cL0ZmOjHbGGwOezoYYfLORMlm/view' /></a>
 
 https://drive.google.com/file/d/1Cw7O79aSvnrK1UW9HlhqC6eqDs6nf4ms/view
 
