@@ -1,7 +1,9 @@
 package com.rohan.hashhacks30;
 
 import android.content.SharedPreferences;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -23,6 +25,7 @@ public class MainChatActivity extends AppCompatActivity {
     private ImageButton mSendButton;
     private DatabaseReference mDatabaseReference;
     private ChatListAdapter mAdapter;
+    @RequiresApi(api = Build.VERSION_CODES.CUPCAKE)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,7 +45,6 @@ public class MainChatActivity extends AppCompatActivity {
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                 sendMessage();
                 return true;
-
             }
         });
 
