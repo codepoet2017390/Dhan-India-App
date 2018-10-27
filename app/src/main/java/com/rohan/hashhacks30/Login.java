@@ -25,7 +25,7 @@ public static FirebaseUser user;
         public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
             FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
             if (firebaseUser != null) {
-                String userId = firebaseUser.getUid();
+                //String userId = firebaseUser.getUid();
                 String userEmail = firebaseUser.getEmail();
                 sharedPref = getSharedPreferences("logindetails",MODE_PRIVATE);
                 SharedPreferences.Editor editor = sharedPref.edit();
