@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommunitySheet">
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:id="@+id/month_spinner"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/peoplecontri"
+        android:text=" No of people Who have Contributed"
+        android:layout_below="@id/month_spinner"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/month_spinner"
+        android:layout_margin="10dp"
+        android:id="@+id/no_of_people_contributed"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/peoplecontri1"
+        android:text=" Total Amount Collected"
+        android:layout_below="@id/peoplecontri"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/no_of_people_contributed"
+        android:layout_margin="10dp"
+
+        android:id="@+id/no_of_people_contributed1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/peoplecontri2"
+        android:text="People Left to Contribute"
+        android:layout_below="@id/peoplecontri1"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/no_of_people_contributed1"
+        android:layout_margin="10dp"
+        android:id="@+id/no_of_people_contributed2"/>
+
+
+</RelativeLayout>
