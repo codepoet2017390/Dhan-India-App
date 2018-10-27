@@ -13,6 +13,18 @@ public class MainActivity extends AppCompatActivity {
  NavigationView navigationView;
  DrawerLayout drawer;
  int navItemIndex;
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+//        if(!getIntent().getExtras().getString("status").equals("OK"))
+//        {
+//            Intent i=new Intent(MainActivity.this,Login.class);
+//            startActivity(i);
+//
+//        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

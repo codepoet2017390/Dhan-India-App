@@ -1,19 +1,19 @@
-package com.rohan.hashhacks30;
-
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.Spinner;
-import android.widget.TextView;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-
-public class CommunitySheet extends AppCompatActivity {
+//package com.rohan.hashhacks30;
+//
+//import android.support.v7.app.AppCompatActivity;
+//import android.os.Bundle;
+//import android.view.View;
+//import android.widget.ArrayAdapter;
+//import android.widget.Button;
+//import android.widget.Spinner;
+//import android.widget.TextView;
+//
+//import java.util.ArrayList;
+//import java.util.Arrays;
+//import java.util.HashMap;
+//import java.util.Map;
+//
+//public class CommunitySheet extends AppCompatActivity {
 //    TextView NoOfPeopleContributed,TotalAmountCollected,PeopleLeftToContri,peoplecontr2;
 //    Spinner Months;
 //    //Button button;
@@ -21,12 +21,12 @@ public class CommunitySheet extends AppCompatActivity {
 //    public int getcurrentmonth(){
 //        return -1;
 //    }
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        String balancesheetid="";
-        //get Balancesheetid from intent
-        setContentView(R.layout.activity_community_sheet);}}
+//    @Override
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        String balancesheetid="";
+//        //get Balancesheetid from intent
+//        setContentView(R.layout.activity_community_sheet);
 //        DatabaseHelper databaseHelper=new DatabaseHelper();
 //        Months=findViewById(R.id.month_spinner);
 //        //button=findViewById(R.id.contributton);

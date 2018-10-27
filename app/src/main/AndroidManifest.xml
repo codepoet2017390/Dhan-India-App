@@ -13,7 +13,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
             </intent-filter>
         </activity>
         <activity android:name=".MainChatActivity">
@@ -28,11 +28,16 @@
         <!--  -->
         <!-- android:label="@string/title_activity_create_room_join_room" -->
         <!-- android:theme="@style/AppTheme.NoActionBar" /> -->
-        <activity android:name=".Login" />
-        <activity android:name=".CommunitySheet" />
+        <activity android:name=".Login" >
+             <intent-filter>
+             <action android:name="android.intent.action.MAIN" />
+             <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+        </activity>
+        <!-- <activity android:name=".CommunitySheet"/> -->
         <activity android:name=".PersonInfo" />
         <activity android:name=".LoanPropose" />
-        <activity android:name=".Main2Activity"></activity>
+        <activity android:name=".SanctionLoan"></activity>
     </application>
 
 </manifest>
