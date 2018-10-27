@@ -37,6 +37,9 @@
             <item
                 android:id="@+id/nav_Community_chat"
                 android:title="Community Chat" />
+            <item
+                android:id="@+id/nav_Community_data"
+                android:title="Community Data" />
 
             <item
                 android:id="@+id/nav_ask"

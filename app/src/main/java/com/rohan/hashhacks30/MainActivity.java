@@ -7,12 +7,19 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
  NavigationView navigationView;
  DrawerLayout drawer;
  int navItemIndex;
+    TextView name;
+    TextView communityName;
+    TextView investedAmount;
+    TextView earning;
+    String naam;
+    TextView amountWithdrawn;
 
     @Override
     protected void onStart() {
@@ -32,6 +39,14 @@ public class MainActivity extends AppCompatActivity {
         navigationView=findViewById(R.id.nav_view);
         drawer=findViewById(R.id.drawer);
         setUpNavigationView();
+        name=findViewById(R.id.nameTextView);
+        communityName=findViewById(R.id.communityName);
+        investedAmount=findViewById(R.id.totalInvested);
+        earning=findViewById(R.id.earnedamount);
+        amountWithdrawn=findViewById(R.id.withdrawn);
+        investedAmount.setText("10000");
+        earning.setText("10500");
+        amountWithdrawn.setText(Integer.toString(LoanPropose.loanAmount));
     }
     private void setUpNavigationView(){
         //Setting Navigation View Item Selected Listener to handle the item click of the navigation menu
@@ -55,6 +70,15 @@ public class MainActivity extends AppCompatActivity {
                         navItemIndex = 1;
                         CURRENT_TAG = TAG_NOTIFICATIONS;
                         break;*/
+                    case R.id.nav_Community_data:
+                        navItemIndex = 0;
+//                        CURRENT_TAG = TAG_HOME;
+                        if (drawer.isDrawerOpen(GravityCompat.START)) {
+                            drawer.closeDrawers();
+                        }
+                        Intent i=new Intent(MainActivity.this,CommunitySheet.class);
+                        startActivity(i);
+                        break;
                     case R.id.nav_myaccount:
                         navItemIndex = 2;
                         //CURRENT_TAG = TAG_SETTINGS;

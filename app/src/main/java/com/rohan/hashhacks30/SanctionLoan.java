@@ -39,7 +39,7 @@ public class SanctionLoan extends AppCompatActivity {
                 m=db.getuserinfo(UserId);
                 amt=Integer.parseInt(m.get("TOTALMONEY"));
                 amt=amt-LoanPropose.loanAmount;
-                db.putuserinfo(LoanPropose.total,amt,UserId,LoanPropose.rate,UserId);
+                //db.putuserinfo(Integer.toString(LoanPropose.total),Integer.toString(amt),UserId,Integer.toString(LoanPropose.rate),UserId);
             }
         });
 

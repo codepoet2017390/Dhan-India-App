@@ -18,6 +18,7 @@ EditText reason2;
 public static int loanAmount;
 public static int rate;
 int timeMon;
+public static int nop=0;
 public static int total;
 Button mButton;
 EditText interestRate;
@@ -46,6 +47,7 @@ String message;
                 intent.putExtra("message",message);
                 finish();
                 startActivity(intent);
+                nop++;
             }
         });
 //        loanAmount=Integer.parseInt(amount.getText().toString());
