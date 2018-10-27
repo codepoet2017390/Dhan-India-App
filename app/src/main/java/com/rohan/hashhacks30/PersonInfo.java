@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class PersonInfo extends AppCompatActivity {
@@ -26,13 +27,22 @@ SharedPreferences pref;
         DatabaseHelper databaseHelper = new DatabaseHelper();
         pref=getPreferences(MODE_PRIVATE);
         String email=pref.getString("firebasekey","vinamrabathwal99@gmail.com");
-        m=databaseHelper.getuserinfo(email);
+        databaseHelper.putuserinoR("Vinmara","2.3","1000","100","Male","9999911111","16/06/1999","DTU",email);
+        m=new HashMap<String, String>();
+        m=databaseHelper.getuserinfoR(email);
         name.setText(m.get("NAME"));
 //        communityName.setText(m.);
         investedAmount.setText(m.get("TOTALMONEY"));
-        int z=Integer.parseInt(m.get("TOTALMONEY"));
-        int x=Integer.parseInt(m.get("INTEREST"));
-        int y= z+(z*x)/100;
-        earning.setText(y);
+        try {
+            int z = Integer.parseInt(m.get("TOTALMONEY"));
+            int x=Integer.parseInt(m.get("INTEREST"));
+            int y= z+(z*x)/100;
+            earning.setText(y);
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+
     }
 }
