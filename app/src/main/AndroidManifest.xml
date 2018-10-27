@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.rohan.hashhacks30">
-
+    <!-- android:name=".Create_room_join_room" -->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,27 +11,28 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-                    <action android:name="android.intent.action.MAIN" />
-                    <category android:name="android.intent.category.LAUNCHER" />
-
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".MainChatActivity">
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity android:name=".SignUp_activity" />
-        <!--<activity-->
-            <!---->
-            <!--android:label="@string/title_activity_create_room_join_room"-->
-            <!--android:theme="@style/AppTheme.NoActionBar" />-->
+        <!-- <activity -->
+        <!--  -->
+        <!-- android:label="@string/title_activity_create_room_join_room" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar" /> -->
         <activity android:name=".Login" />
-        <activity android:name=".CommunitySheet"/>
+        <activity android:name=".CommunitySheet" />
         <activity android:name=".PersonInfo" />
-        <activity android:name=".LoanPropose"></activity>
+        <activity android:name=".LoanPropose" />
+        <activity android:name=".Main2Activity"></activity>
     </application>
-    <!--android:name=".Create_room_join_room"-->
+
 </manifest>
