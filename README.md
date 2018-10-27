@@ -31,7 +31,7 @@ This group can be created by anyone and the person creating the group will be th
 
 Any person in the group gets to take the loan once and app automatically make emi's for it within a year span and this app will work on a cycle of a year,means after a year there will be no money of any person in the group and every person will get their base amount and the amount of interest they had earned.
 
-##Growth Opportnity for the App
+## Growth Opportnity for the App
 
 At present we deal within a single community. So we plan at interconnecting two communities which can be like miles apart. If resolved upon issues like
 - trust issues
