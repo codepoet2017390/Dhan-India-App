@@ -25,6 +25,7 @@ public class MainChatActivity extends AppCompatActivity {
     private ImageButton mSendButton;
     private DatabaseReference mDatabaseReference;
     private ChatListAdapter mAdapter;
+    SharedPreferences sharedPref;
     @RequiresApi(api = Build.VERSION_CODES.CUPCAKE)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +46,7 @@ public class MainChatActivity extends AppCompatActivity {
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                 sendMessage();
                 return true;
+
             }
         });
 
@@ -62,6 +64,11 @@ public class MainChatActivity extends AppCompatActivity {
     {
         //SharedPreferences prefs =getSharedPreferences(RegisterActivity.CHAT_PREFS,MODE_PRIVATE);
         //mDisplayName=prefs.getString(RegisterActivity.DISPLAY_NAME_KEY,null);
+     //   SharedPreferences prefs =getSharedPreferences(RegisterActivity.CHAT_PREFS,MODE_PRIVATE);
+
+        sharedPref = getPreferences(MODE_PRIVATE);
+        String UserId = sharedPref.getString("firebasekey", "");
+        mDisplayName=UserId;
         if(mDisplayName==null)
             mDisplayName="Anonymous";
     }

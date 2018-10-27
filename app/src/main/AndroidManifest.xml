@@ -26,6 +26,7 @@
             android:label="@string/title_activity_create_room_join_room"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Login" />
+        <activity android:name=".CommunitySheet"/>
         <activity android:name=".PersonInfo" />
         <activity android:name=".LoanPropose"></activity>
     </application>
