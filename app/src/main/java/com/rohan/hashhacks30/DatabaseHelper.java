@@ -2,6 +2,7 @@ package com.rohan.hashhacks30;
 
 import android.support.annotation.NonNull;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 
@@ -43,6 +44,7 @@ public class DatabaseHelper {
                try {
                    arr.put("NAME", dataSnapshot.getValue().toString());
                } catch (Exception e) {
+
                    e.printStackTrace();
                }
 
@@ -50,6 +52,7 @@ public class DatabaseHelper {
 
            @Override
            public void onCancelled(@NonNull DatabaseError databaseError) {
+
 
            }
        });
