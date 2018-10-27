@@ -17,7 +17,7 @@ import java.util.List;
 
 public class Login extends AppCompatActivity {
 public int RC_SIGN_IN=123;
-public  FirebaseUser user;
+public static FirebaseUser user;
     private SharedPreferences sharedPref;
 //    FirebaseAuth auth = FirebaseAuth.getInstance();
     FirebaseAuth.AuthStateListener authListener = new FirebaseAuth.AuthStateListener() {
@@ -27,10 +27,11 @@ public  FirebaseUser user;
             if (firebaseUser != null) {
                 String userId = firebaseUser.getUid();
                 String userEmail = firebaseUser.getEmail();
-                sharedPref = getPreferences(MODE_PRIVATE);
+                sharedPref = getSharedPreferences("logindetails",MODE_PRIVATE);
                 SharedPreferences.Editor editor = sharedPref.edit();
                 editor.putString("firebasekey", userEmail);
                 editor.commit();
+                editor.apply();
             }
         }
     };
@@ -61,6 +62,8 @@ public  FirebaseUser user;
                 // Successfully signed in
                 user = FirebaseAuth.getInstance().getCurrentUser();
                 Intent i=new Intent(Login.this,MainActivity.class);
+                i.putExtra("status","OK");
+                startActivity(i);
                 // ...
             } else {
                 Toast.makeText(getApplicationContext(),"LOGIN FAILED",Toast.LENGTH_LONG).show();

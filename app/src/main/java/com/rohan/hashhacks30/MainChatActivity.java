@@ -1,5 +1,6 @@
 package com.rohan.hashhacks30;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
@@ -40,6 +41,7 @@ public class MainChatActivity extends AppCompatActivity {
         mSendButton = (ImageButton) findViewById(R.id.sendButton);
         mChatListView = (ListView) findViewById(R.id.chat_list_view);
 
+
         // TODO: Send the message when the "enter" button is pressed
         mInputText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
@@ -49,6 +51,31 @@ public class MainChatActivity extends AppCompatActivity {
 
             }
         });
+
+        try {
+            String message = getIntent().getExtras().getString("message");
+            if (message != null) {
+                mInputText.setText(message);
+                sendMessage();
+            }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+
+        try {
+            String message = getIntent().getExtras().getString("cancelled");
+            if (message != null) {
+                mInputText.setText(message);
+                sendMessage();
+            }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+
 
         // TODO: Add an OnClickListener to the sendButton to send a message
         mSendButton.setOnClickListener(new View.OnClickListener() {
