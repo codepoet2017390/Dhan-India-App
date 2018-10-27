@@ -16,8 +16,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up_activity);
-       setUpNavigationView();
+        setContentView(R.layout.activity_main);
+        navigationView=findViewById(R.id.nav_view);
+        drawer=findViewById(R.id.drawer);
+        setUpNavigationView();
     }
     private void setUpNavigationView(){
         //Setting Navigation View Item Selected Listener to handle the item click of the navigation menu
