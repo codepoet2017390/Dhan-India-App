@@ -1,7 +1,9 @@
 package com.rohan.hashhacks30;
 
 import android.content.SharedPreferences;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -24,6 +26,7 @@ public class MainChatActivity extends AppCompatActivity {
     private DatabaseReference mDatabaseReference;
     private ChatListAdapter mAdapter;
     SharedPreferences sharedPref;
+    @RequiresApi(api = Build.VERSION_CODES.CUPCAKE)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,6 +62,8 @@ public class MainChatActivity extends AppCompatActivity {
     // TODO: Retrieve the display name from the Shared Preferences
     private void setUpDisplayName()
     {
+        //SharedPreferences prefs =getSharedPreferences(RegisterActivity.CHAT_PREFS,MODE_PRIVATE);
+        //mDisplayName=prefs.getString(RegisterActivity.DISPLAY_NAME_KEY,null);
      //   SharedPreferences prefs =getSharedPreferences(RegisterActivity.CHAT_PREFS,MODE_PRIVATE);
 
         sharedPref = getPreferences(MODE_PRIVATE);
