@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "661468930381-ugu7ieae76cdpevnv2c49scfn6sjer0i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rohan.hashhacks30",
+            "certificate_hash": "c60486bf8c46f7799104ffa00c22cad88becf908"
+          }
+        },
+        {
           "client_id": "661468930381-in97mm3roidvcmaueuv9guh7ncmkv617.apps.googleusercontent.com",
           "client_type": 3
         }
