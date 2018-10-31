@@ -37,7 +37,7 @@ At present we deal within a single community. So we plan at interconnecting two 
 - trust issues
 - money tranfer
 - currency value dips and hikes.
-
+**If successfully taken care of these issues**
 **this app could really grow further**
 
 --------------------------------------------------------------------------------------
