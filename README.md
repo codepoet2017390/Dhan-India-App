@@ -41,6 +41,8 @@ At present we deal within a single community. So we plan at interconnecting two 
 **If successfully taken care of these issues**
 **this app could really grow further**
 
+#### Please feel free to open any issue you find inside the App
+
 --------------------------------------------------------------------------------------
 ![whatsapp image 2018-10-27 at 13 35 30](https://user-images.githubusercontent.com/37406965/47601379-4dc47f80-d9ed-11e8-9cb1-5ed9dacd7352.jpeg)
 
