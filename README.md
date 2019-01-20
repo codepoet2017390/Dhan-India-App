@@ -6,7 +6,7 @@ In this app we are trying to create groups of people and connect them economical
 
 ## How the app functions(Community Level)
 
-#### - A Community is created
+#### - First a Community is created
 #### - Members register with the community
 #### - The App runs a cycle of a year from the time the user has joined the community  
 #### - Within 1 year people pay every month and loans are given with an interest rate and a boundation that the loan is repayed in an year.
